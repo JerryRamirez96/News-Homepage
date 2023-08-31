@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="header-container">
+        <div>
+          <img src="./assets/images/logo.svg" />
+          <span class="openbtn"
+            ><img src="./assets/images/icon-menu.svg"
+          /></span>
+        </div>
+        <nav class="main-navigation" id="main-navigation-id">
+          <a href="#" class="closebtn"
+            ><img src="./assets/images/icon-menu-close.svg"
+          /></a>
+          <ul
+            id="primary-navigation"
+            class="primary-navigation-list"
+            data-visible="false"
+          >
+            <li class="active"><a href="">Home</a></li>
+            <li class="active"><a href="">New</a></li>
+            <li class="active"><a href="">Popular</a></li>
+            <li class="active"><a href="">Trending</a></li>
+            <li class="active"><a href="">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="bright-new-parent">
+        <div class="bright-future-main">
+          <div class="bright-future-img">
+            <!-- <picture>
+            <source media="(max-width: 768px)" srcset="./assets/images/image-web-3-mobile.jpg" width="343" height="300" class="mobile-img">
+            <source media="(min-width: 769px)" srcset="./assets/images/image-web-3-desktop.jpg" >
+            <img src="./assets/images/image-web-3-desktop.jpg" >
+          </picture> -->
+            <div class="blocks-img-mobile">
+              <img
+                src="./assets/images/image-web-3-mobile.jpg"
+                width="343"
+                height="300"
+              />
+            </div>
+            <div class="blocks-img-desktop">
+              <img src="./assets/images/image-web-3-desktop.jpg" />
+            </div>
+          </div>
+          <div class="bright-future-title">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="bright-future-text-2">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+        <div class="new-main-container">
+          <div class="new-main">
+            <h2>New</h2>
+            <div class="new-topic-card border-bottom-line">
+              <a>Hydrogen VS Electric Cars</a>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="new-topic-card border-bottom-line">
+              <a>The Downsides of AI Artistry</a>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div class="new-topic-card">
+              <a>Is VC Funding Drying Up?</a>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tech-articles-container">
+        <div class="tech-articles">
+          <div class="flex-parent-articles">
+            <div class="articles-img">
+              <img
+                src="./assets/images/image-retro-pcs.jpg"
+                width="100"
+                height="127"
+              />
+            </div>
+            <div class="articles-content">
+              <span>01</span>
+              <a>Reviving Retro PCs</a>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="flex-parent-articles">
+            <div class="articles-img">
+              <img
+                src="./assets/images/image-top-laptops.jpg"
+                width="100"
+                height="127"
+              />
+            </div>
+            <div class="articles-content">
+              <span>02</span>
+              <a>Top 10 Laptops of 2022</a>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="flex-parent-articles">
+            <div class="articles-img">
+              <img
+                src="./assets/images/image-gaming-growth.jpg"
+                width="100"
+                height="127"
+              />
+            </div>
+            <div class="articles-content">
+              <span>03</span>
+              <a>The Growth of Gaming</a>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
